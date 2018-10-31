@@ -1,4 +1,5 @@
 require './lib/account.rb'
+require 'pry'
 
 describe Account do
 
@@ -32,6 +33,6 @@ describe Account do
     it 'is expected to raise error if no owner is set' do
         expect { described_class.new }.to raise_error 'An Account owner is required'
     end
-    
+
 
 end
