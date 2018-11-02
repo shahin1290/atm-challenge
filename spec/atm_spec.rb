@@ -1,4 +1,5 @@
 require './lib/atm.rb'
+require './lib/account.rb'
 
 describe Atm do
 
@@ -12,7 +13,6 @@ describe Atm do
         subject.withdraw(50, '1234', account)
         expect(subject.funds).to eq 950
     end
-
 
     before do
         allow(account).to receive(:balance).and_return(100)
