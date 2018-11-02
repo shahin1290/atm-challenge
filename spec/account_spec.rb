@@ -4,9 +4,7 @@ require 'pry'
 
 describe Account do
 
-    # let(:person) {instance_double('Person', name: 'Thomas')}
-    
-    subject { described_class.new({owner: self}) }
+    subject { described_class.new({owner: 'shahin'}) }
 
     it 'check length of a number' do
         number_length = Math.log10(subject.pin_code).to_i + 1
@@ -28,7 +26,7 @@ describe Account do
     end
 
     it 'is expected to have an owner' do
-        expect(subject.owner).to eq self
+        expect(subject.owner).to eq 'shahin'
     end
 
     it 'is expected to raise error if no owner is set' do
