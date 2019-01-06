@@ -1,7 +1,6 @@
 # ATM CHALLENGE
 Our client is a financial institution that wants to allow its customers to withdraw funds from their accounts using an Automatic Teller Machine (ATM). They have turned to us for a prototype of a system with limited functionality. Our job is to write a simple Ruby program that can be run in the Interactive Ruby Shell (IRB).
 
-
 ## SCOPES
 1. An ATM machine can hold up to $1000
 2. Withdrawal can be cleared only if:
